@@ -7,7 +7,7 @@ from google.cloud import storage
 
 BASE_DIR = Path(__file__).parent
 MODEL_FILE = 'model.h5'
-MODEL_PATH_LOCAL = BASE_DIR/ 'files' / MODEL_FILE
+MODEL_PATH_LOCAL = BASE_DIR/ 'state_files' / MODEL_FILE
 MODEL_PATH_CLOUD = os.environ['MODEL_PATH_CLOUD']
 BUCKET = os.environ('BUCKET')
 KEY_PATH = BASE_DIR / 'auth' / 'service.json'
