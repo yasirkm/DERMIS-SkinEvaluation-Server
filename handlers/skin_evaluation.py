@@ -6,7 +6,7 @@ from PIL import Image
 
 from tensorflow import keras
 
-from models.skin_model import model, CONDITIONS, RESOLUTION
+from ml_models.skin_model import model, CONDITIONS, RESOLUTION
 
 def img_eval(body):
     # Process body of base64-encoded image to np array
