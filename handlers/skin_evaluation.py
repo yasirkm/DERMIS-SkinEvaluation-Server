@@ -30,6 +30,4 @@ def img_eval(body):
         'confidence' : confidence,
     }
 
-    print(result)
-
     return result
