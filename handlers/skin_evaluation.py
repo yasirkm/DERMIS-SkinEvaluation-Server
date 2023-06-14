@@ -10,6 +10,7 @@ from ml_models.skin_model import model, CONDITIONS, RESOLUTION
 
 def img_eval(body):
     # Process body of base64-encoded image to np array
+    body = body.replace(b'\\n', b'')    # Temporary padding related error fix
     skin_image = base64.b64decode(body)
     skin_image = BytesIO(skin_image)
     skin_image = Image.open(skin_image)
